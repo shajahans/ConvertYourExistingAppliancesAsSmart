@@ -13,9 +13,9 @@ ESP8266WiFiMulti WiFiMulti;
 WebSocketsClient webSocket;
 WiFiClient client;
 
-#define MyApiKey "de28920a-22d1-420a-8a13-5f2094abce01" // TODO: Change to your sinric API Key. Your API Key is displayed on sinric.com dashboard
+#define MyApiKey "Add Your API Key from Siniric Here" // TODO: Change to your sinric API Key. Your API Key is displayed on sinric.com dashboard
 #define MySSID "Shajahan" // TODO: Change to your Wifi network SSID
-#define MyWifiPassword "!Mumthas@123#" // TODO: Change to your Wifi network password
+#define MyWifiPassword "Add Your Wifi Password Here" // TODO: Change to your Wifi network password
 
 #define HEARTBEAT_INTERVAL 300000 // 5 Minutes 
 #define LED 2
@@ -37,49 +37,49 @@ bool isConnected = false;
 // deviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here
 
 void turnOn(String deviceId) {
-  if (deviceId == "5ec77412f2f71462da8a48ef") // Device ID of Living Room Light
+  if (deviceId == "5ec77412f2f71462da8ert45g44") // Device ID of Living Room Light
   {  
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     digitalWrite(relayPin1, LOW);
   } 
-  else if (deviceId == "5ec77428f2f71462da8a48f5") // Device ID of Living Room Fan
+  else if (deviceId == "5ec77428f2f71462da8a44f4w") // Device ID of Living Room Fan
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     digitalWrite(relayPin2, LOW);
   }
-  else if (deviceId == "5ec77440f2f71462da8a48fc") // Device ID of Bed Room Light
+  else if (deviceId == "5ec77440f2f71462da43tfrefe") // Device ID of Bed Room Light
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     digitalWrite(relayPin3, LOW);
   }
-  else if (deviceId == "5ec77450f2f71462da8a4901") // Device ID of Bed Room Fan
+  else if (deviceId == "5ec77450f2f71462da8a4rgegg") // Device ID of Bed Room Fan
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     digitalWrite(relayPin4, LOW);
   }
-  else if (deviceId == "5ec77462f2f71462da8a4907") // Device ID of Guest Fan
+  else if (deviceId == "5ec77462f2f71462da8asdgds") // Device ID of Guest Fan
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     digitalWrite(relayPin5, LOW);
   }
-  else if (deviceId == "5ec77470f2f71462da8a490b") // Device ID of Guest Light
+  else if (deviceId == "5ec77470f2f71462da8a4sfgsg") // Device ID of Guest Light
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     digitalWrite(relayPin6, LOW);
   }
-  else if (deviceId == "5ec7a335f2f71462da8a5228") // Device ID of Kitchen Light
+  else if (deviceId == "5ec7a335f2f71462da8a5refger") // Device ID of Kitchen Light
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     digitalWrite(relayPin7, LOW);
   }
-  else if (deviceId == "5ec7a349f2f71462da8a522e") // Device ID of Kitchen Fan
+  else if (deviceId == "5ec7a349f2f71462da8afg354aae4") // Device ID of Kitchen Fan
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
@@ -92,49 +92,49 @@ void turnOn(String deviceId) {
 }
 
 void turnOff(String deviceId) {
-   if (deviceId == "5ec77412f2f71462da8a48ef") // Device ID of Living Room Light
+   if (deviceId == "5ec77412f2f71462da8a48wqerqr") // Device ID of Living Room Light
    {  
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
      digitalWrite(relayPin1, HIGH);
    }
-   else if (deviceId == "5ec77428f2f71462da8a48f5") // Device ID of Living Room Fan
+   else if (deviceId == "5ec77428f2f71462da8a43243rew") // Device ID of Living Room Fan
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
      digitalWrite(relayPin2, HIGH);
   }
-     else if (deviceId == "5ec77440f2f71462da8a48fc") // Device ID of Bed Room Light
+     else if (deviceId == "5ec77440f2f71462da8ar345145") // Device ID of Bed Room Light
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
      digitalWrite(relayPin3, HIGH);
   }
-     else if (deviceId == "5ec77450f2f71462da8a4901") // Device ID of Bed Room Fan
+     else if (deviceId == "5ec77450f2f71462da8arqwer321") // Device ID of Bed Room Fan
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
      digitalWrite(relayPin4, HIGH);
   }
-     else if (deviceId == "5ec77462f2f71462da8a4907") // Device ID of Guest Room Fan
+     else if (deviceId == "5ec77462f2f71462da8a423434e") // Device ID of Guest Room Fan
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
      digitalWrite(relayPin5, HIGH);
   }
-     else if (deviceId == "5ec77470f2f71462da8a490b") // Device ID of Guest Room Light
+     else if (deviceId == "5ec77470f2f71462da8a42341rb") // Device ID of Guest Room Light
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
      digitalWrite(relayPin6, HIGH);
   }
-     else if (deviceId == "5ec7a335f2f71462da8a5228") // Device ID of Kitchen Light
+     else if (deviceId == "5ec7a335f2f71462da8a5345r8") // Device ID of Kitchen Light
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
      digitalWrite(relayPin7, HIGH);
   }
-     else if (deviceId == "5ec7a349f2f71462da8a522e") // Device ID of Kitchen Fan
+     else if (deviceId == "5ec7a349f2f71462da823445f2e") // Device ID of Kitchen Fan
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
